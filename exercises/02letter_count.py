@@ -31,3 +31,14 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 2}
+
+def letter_count(arr):
+    dd={}
+    for letter in arr:
+        if letter in dd:
+            dd[letter] += 1
+        else:
+            dd[letter] = 1
+    return dd
+
+print(letter_count('banana'))
